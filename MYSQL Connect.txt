@@ -1,0 +1,46 @@
+Mysql connect
+command prompt:
+
+User Creation:
+
+port number should be remembered
+>connect
+Enter user-name:system
+Enter password:installation password
+for port number:
+->C drive->Oracle.exe->app->10.2.0->server->Network->admin->
+
+SQL>create user karthik identified karthik;
+user created.
+SQL>grant connect,resource to karthik
+Grant succeeded.
+SQL>commit;
+SQL>conn (if it's logged out)
+
+Creating Tables:
+SQL>create table student{
+    2 regno number(5) primary key, //accepts only unique values
+    3 name varchar(15),
+    4 email varchar(15),
+    5 DOB DATE
+    6 );
+Press Enter
+Table created.
+
+SQL>desc student;  //To check the structure of the table desc-describe the student structure
+
+SQL>alter table student add marks number(3);
+Table altered
+SQL>alter table student drop column DOB;
+Table Altered
+SQL>desc student
+SQL>alter table student modify name Varchar(30);
+SQL>desc student
+SQL>rename student to Deptstudent
+SQL>desc student
+error deosn't exist
+SQL>desc Deptstudent
+
+//To Rename names inside the table
+SQL>
+SQL>desc Deptstudent
